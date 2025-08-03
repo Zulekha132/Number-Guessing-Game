@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Number Guessing Game</h2>
+    <p>I have selected a number. Can you guess it?</p>
+
+    <label for="difficulty">Choose Difficulty:</label>
+    <select id="difficulty" onchange="setDifficulty()">
+      <option value="100">Medium (1-100)</option>
+      <option value="50">Easy (1-50)</option>
+      <option value="500">Hard (1-500)</option>
+    </select>
+
+    <br><br>
+
+    <input type="number" id="guessInput" placeholder="Enter your guess" />
+    <button onclick="checkGuess()">Submit Guess</button>
+    <button onclick="resetGame()">Reset Game</button>
+
+    <p id="feedback"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
